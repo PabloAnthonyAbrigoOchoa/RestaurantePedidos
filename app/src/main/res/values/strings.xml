@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Restaurante - Pedidos</string>
+
+    <string-array name="num_tables">
+        <item> Mesa N° 1 </item>
+        <item> Mesa N° 2 </item>
+        <item> Mesa N° 3 </item>
+        <item> Mesa N° 4 </item>
+        <item> Mesa N° 5 </item>
+        <item> Mesa N° 6 </item>
+    </string-array>
+</resources>
