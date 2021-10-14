@@ -9,8 +9,8 @@
 
     <LinearLayout
         android:id="@+id/linearLayout"
-        android:layout_width="413dp"
-        android:layout_height="419dp"
+        android:layout_width="411dp"
+        android:layout_height="500dp"
         android:gravity="center"
         android:orientation="vertical"
         app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
@@ -24,9 +24,14 @@
             android:layout_height="wrap_content"
             android:gravity="center"
             android:text="BIENVENIDOS"
-            android:textSize="18dp"
-            android:textStyle="bold"
-            android:textColor="#CA9F1D"/>
+            android:textColor="#CA9F1D"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textViewSeparador"
+            android:layout_width="match_parent"
+            android:layout_height="32dp" />
 
         <TextView
             android:id="@+id/textViewTitPB"
@@ -117,7 +122,7 @@
 
         <Button
             android:id="@+id/btnSalir"
-            android:layout_width="78dp"
+            android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:backgroundTint="#9C3737"
             android:gravity="center"

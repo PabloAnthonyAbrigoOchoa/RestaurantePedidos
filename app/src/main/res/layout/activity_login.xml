@@ -16,10 +16,5 @@
         android:textColor="@color/white"
         android:textSize="18dp" />
 
-    <ImageView
-        android:id="@+id/imageViewDesayunos"
-        android:layout_width="match_parent"
-        android:layout_height="111dp"
-        app:srcCompat="@drawable/pblogo" />
 
 </LinearLayout>

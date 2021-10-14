@@ -25,6 +25,7 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        setTheme(R.style.SplashTime);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         spinnerNumTables = findViewById(R.id.spinnerNumTables);

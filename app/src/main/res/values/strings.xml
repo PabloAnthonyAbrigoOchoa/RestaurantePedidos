@@ -1,5 +1,21 @@
 <resources>
-    <string name="app_name">Restaurante - Pedidos</string>
+    <string name="app_name">PB - RESTAURANT - PÉDIDOS</string>
+    <string name="pb_restaurant">PB - RESTAURANT</string>
+    <string name="acontinuaci_n_marque_los_datos_de_su_p_dido">Acontinuación, marque los datos de su Pédido :</string>
+    <string name="d_e_s_a_y_u_n_o_s">D E S A Y U N O S</string>
+    <string name="almuerzo_completo_entrada_sopa_o_caldo_plato_fuerte_carnes_cerdo_res_cordero_ensaladas_a_su_elecci_n_mas_bebida_70">Almuerzo Completo: entrada,caldo,carnes: cerdo, res,ensalada mas bebida $70</string>
+    <string name="total_a_pagar">Total a pagar :</string>
+    <string name="regresar">Regresar</string>
+    <string name="almuerzo_normal_sopa_arroz_con_carne_y_ensalada_mas_bebida_40">Almuerzo Normal: sopa, arroz con carne y ensalada mas bebida $40</string>
+    <string name="almuerzo_de_la_casa_sopa_arroz_con_dos_tipos_de_carne_dos_tipos_de_ensalada_mas_bebida_y_postre_50">Almuerzo de la casa: sopa, arroz con carne, dos tipos de ensalada mas bebida $50</string>
+    <string name="almuerzo_buffet_caldo_o_sopa_arroz_o_fiedos_carne_asada_o_cocida_y_ensalada_mas_bebida_60">Almuerzo Buffet: caldo,fiedos, carne asada,ensalada mas bebida $60</string>
+    <string name="todo">TODO</string>
+    <string name="a_l_m_u_e_r_z_os">A L M U E R Z OS</string>
+    <string name="calcular">Calcular</string>
+    <string name="cancelar">Cancelar</string>
+    <string name="desayuno_americano_incluye_caf_o_leche_jugos_zumos_de_o_frutas_huevos_tostadas_mantequilla_40">Desayuno americano:leche, jugos de frutas,huevos,pan,mantequilla $40</string>
+    <string name="para_llevar">Para Llevar</string>
+    <string name="desayuno_normal_caf_o_leche_pan_o_tostadas_huevos_cocinados_y_jugo_de_frutas_30">Desayuno Normal: café,tostadas, huevos y jugo de frutas $30</string>
 
     <string-array name="num_tables">
         <item> Mesa N° 1 </item>
