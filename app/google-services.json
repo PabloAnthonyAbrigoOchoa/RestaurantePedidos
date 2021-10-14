@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "173580945254",
+    "project_id": "restaurante-pedidos-fa310",
+    "storage_bucket": "restaurante-pedidos-fa310.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:173580945254:android:5e07bf587524a46658aaa7",
+        "android_client_info": {
+          "package_name": "ec.tecnologicoloja.proyecto.restaurant_pedidos"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "173580945254-tjth8l247mfkndkf6ospp3pn3ck7kf7c.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDkPvIZGNwXj_01vzmbrtLAdR-OxU3AxZ8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "173580945254-tjth8l247mfkndkf6ospp3pn3ck7kf7c.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

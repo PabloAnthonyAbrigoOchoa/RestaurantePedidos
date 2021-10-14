@@ -18,6 +18,15 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name="Models.Pedidos"
+            android:exported="true"/>
+        <activity
+            android:name="Models.QuienesSomos"
+            android:exported="true"/>
+        <activity
+            android:name="Models.Login"
+            android:exported="true"/>
     </application>
 
 </manifest>

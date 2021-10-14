@@ -9,8 +9,8 @@
 
     <LinearLayout
         android:id="@+id/linearLayout"
-        android:layout_width="415dp"
-        android:layout_height="247dp"
+        android:layout_width="413dp"
+        android:layout_height="419dp"
         android:gravity="center"
         android:orientation="vertical"
         app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
@@ -19,30 +19,46 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <TextView
-            android:id="@+id/textViewTitulo1"
+            android:id="@+id/textViewBienvenidos"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:text="BIENVENIDOS" />
+            android:text="BIENVENIDOS"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:textColor="#CA9F1D"/>
 
         <TextView
-            android:id="@+id/textViewTitulo2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:text="PB - RESTAURANT" />
-
-        <ImageButton
-            android:id="@+id/imageButton"
+            android:id="@+id/textViewTitPB"
             android:layout_width="match_parent"
-            android:layout_height="139dp"
-            tools:srcCompat="@tools:sample/backgrounds/scenic" />
+            android:layout_height="wrap_content"
+            android:background="#9C3737"
+            android:gravity="center"
+            android:text="PB - RESTAURANT"
+            android:textColor="@color/white"
+            android:textSize="18dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="363dp"
+            android:orientation="horizontal">
+
+
+            <ImageButton
+                android:id="@+id/imageButtonPB"
+                android:layout_width="match_parent"
+                android:layout_height="357dp"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/pblogo" />
+
+        </LinearLayout>
+
     </LinearLayout>
 
     <LinearLayout
         android:id="@+id/linearLayout2"
-        android:layout_width="358dp"
-        android:layout_height="154dp"
+        android:layout_width="357dp"
+        android:layout_height="116dp"
         android:gravity="center"
         android:orientation="horizontal"
         app:layout_constraintBottom_toTopOf="@+id/linearLayout4"
@@ -55,8 +71,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:gravity="right"
             android:text="Número de Mesa :"
-            android:gravity="right"/>
+            android:textStyle="italic"
+            android:textColor="#CA9F1D"/>
 
         <Spinner
             android:id="@+id/spinnerNumTables"
@@ -68,27 +86,42 @@
 
     <LinearLayout
         android:id="@+id/linearLayout4"
-        android:layout_width="406dp"
-        android:layout_height="199dp"
+        android:layout_width="408dp"
+        android:layout_height="56dp"
         android:layout_marginTop="2dp"
         android:gravity="center"
-        android:orientation="vertical"
+        android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
 
-        <Button
-            android:id="@+id/btnIniciarPedido"
-            android:layout_width="186dp"
-            android:layout_height="wrap_content"
-            android:text="Iniciar Pedido" />
 
         <Button
             android:id="@+id/btnHistorialPedido"
-            android:layout_width="131dp"
-            android:layout_height="wrap_content"
-            android:text="Historial" />
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:backgroundTint="#9C3737"
+            android:gravity="center"
+            android:text="Historial"
+            android:textAlignment="center" />
+
+        <Button
+            android:id="@+id/btnIniciarPedido"
+            android:layout_width="137dp"
+            android:layout_height="56dp"
+            android:backgroundTint="#9C3737"
+            android:gravity="center"
+            android:text="Iniciar Pedido"
+            android:textAlignment="center" />
+
+        <Button
+            android:id="@+id/btnSalir"
+            android:layout_width="78dp"
+            android:layout_height="match_parent"
+            android:backgroundTint="#9C3737"
+            android:gravity="center"
+            android:text="Salir" />
 
     </LinearLayout>
 

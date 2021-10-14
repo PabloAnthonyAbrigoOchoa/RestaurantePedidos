@@ -1,19 +1,206 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/textViewTitPB"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#9C3737"
+        android:gravity="center"
+        android:text="PB - RESTAURANT"
+        android:textColor="@color/white"
+        android:textSize="18dp"
+
+        />
+
+    <TextView
+        android:id="@+id/textViewIndicaciones"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Acontinuación, marque los datos de su Pédido :"
+        android:textColor="@color/black"
+        android:textSize="17dp" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/radioButton1"
+            android:layout_width="match_parent"
+            android:layout_height="27dp"
+            android:text="Para Llevar" />
+
+        <RadioButton
+            android:id="@+id/radioButton2"
+            android:layout_width="match_parent"
+            android:layout_height="29dp"
+            android:text="Para Entrega a Domicilio" />
+    </RadioGroup>
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="horizontal"></LinearLayout>
-
-    <Button
-        android:id="@+id/button"
-        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Button"
-        tools:layout_editor_absoluteX="301dp"
-        tools:layout_editor_absoluteY="447dp" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textViewDesayunos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="D E S A Y U N O S"
+            android:textColor="#CA9F1D"
+            android:textSize="18dp"
+            android:textStyle="italic" />
+
+        <ImageView
+            android:id="@+id/imageViewDesayunos"
+            android:layout_width="match_parent"
+            android:layout_height="111dp"
+            app:srcCompat="@drawable/desayunos" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/checkBoxDN"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Desayuno Normal: café o leche, pan o tostadas, huevos cocinados y jugo de frutas $30" />
+
+            <CheckBox
+                android:id="@+id/checkBoxDF"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Desayuno Buffet: variedad de alimentos dispuestos por nuestro restaurante $60" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/checkBoxDC"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Desayuno Continental: Incluye café, te o leche, jugo o frutas, pan o tostadas, mermelada $50" />
+
+            <CheckBox
+                android:id="@+id/checkBoxDA"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Desayuno americano: Incluye café,o leche, jugos/zumos de/o frutas, huevos, tostadas, mantequilla $40" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textViewAlmuerzos"
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:gravity="center"
+            android:text="A L M U E R Z OS "
+            android:textColor="#CA9F1D"
+            android:textSize="18dp"
+            android:textStyle="italic" />
+
+        <ImageView
+            android:id="@+id/imageViewAlmuerzos"
+            android:layout_width="wrap_content"
+            android:layout_height="110dp"
+            app:srcCompat="@drawable/almuerzos" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/checkBox4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Desayuno Normal: café o leche, pan o tostadas, huevos cocinados y jugo de frutas $30" />
+
+            <CheckBox
+                android:id="@+id/checkBox3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Desayuno Buffet: variedad de alimentos dispuestos por nuestro restaurante $60" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/checkBox2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Desayuno Continental: Incluye café, te o leche, jugo o frutas, pan o tostadas, mermelada $50" />
+
+            <CheckBox
+                android:id="@+id/checkBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Desayuno americano: Incluye café,o leche, jugos/zumos de/o frutas, huevos, tostadas, mantequilla $40" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnRegresarMenu"
+            android:layout_width="190dp"
+            android:layout_height="wrap_content"
+            android:text="Regresar"
+            android:backgroundTint="#9C3737"
+            />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Button"
+            android:backgroundTint="#9C3737"/>
+
+    </LinearLayout>
+
+</LinearLayout>
