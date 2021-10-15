@@ -25,7 +25,7 @@
     <string name="facebook">Facebook</string>
     <string name="email">Email</string>
     <string name="no_tiene_una_cuenta">No tiene una cuenta?</string>
-
+    <string name="quienes_somos">Somos un par de desarrolladores y diseñadores, aficionados por lo que hacemos, en este caso traemos un Sistema para hacer pédidos, ya sea para servirse o a su vez entregar a domicilio. Somos principiantes pero estamos en la plena seguridad de que les va a gustar nuestro proyecto que ofrecemos. #PB-RESTAURANT</string>
     <string-array name="num_tables">
         <item> Mesa N° 1 </item>
         <item> Mesa N° 2 </item>

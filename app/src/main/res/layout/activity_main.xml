@@ -149,7 +149,7 @@
                     android:id="@+id/userId"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="xxxxxxxxxxxx"
+                    android:text="xxxxxxxxxxxxxxxxxxxxxxxxxxx"
                     android:textSize="10sp" />
             </LinearLayout>
 

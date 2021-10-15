@@ -29,7 +29,7 @@
             android:id="@+id/textView2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Somos un par de desarrolladores y diseñadores, aficionados por lo que hacemos, en este caso traemos un Sistema para la reservación de pédidos, ya sea para servirse o a su vez entrega a domicilio. Somos principiantes pero estamos en la plena seguridad de que les va a gustar nuestro proyecto que ofrecemos. #PB-RESTAURANT"
+            android:text="@string/quienes_somos"
             android:textSize="18dp"
             android:textAlignment="center"
             android:textStyle="italic"

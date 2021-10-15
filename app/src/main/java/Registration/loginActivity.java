@@ -40,6 +40,8 @@ public class loginActivity extends AppCompatActivity implements View.OnClickList
     private FirebaseAuth mAuth;
     //Linea de codigo para agregar clientes de inicio de sesion con Google
     private GoogleSignInClient mGoogleSignInClient;
+    //Variable mAuthStateListener para controlar el estado del usuario:
+    private FirebaseAuth.AuthStateListener mAuthStateListener;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -60,6 +62,11 @@ public class loginActivity extends AppCompatActivity implements View.OnClickList
             }
         });
 
+        //Asi mismo inicializamos el ProgressBar y le pasamos el contexto en este caso de la misma activity
+        mProgressBar = new ProgressDialog(loginActivity.this);
+        //Y instanciamos la variable del Firebase
+        mAuth = FirebaseAuth.getInstance();
+
         //Configuramos Google Sign In
         GoogleSignInOptions gso = new GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
                 .requestIdToken(getString(R.string.default_web_client_id))
@@ -70,6 +77,19 @@ public class loginActivity extends AppCompatActivity implements View.OnClickList
 
         //Inicializamos Firebase Auth
         mAuth = FirebaseAuth.getInstance();
+
+        //Controlamos el estado del usuario
+        mAuthStateListener = new FirebaseAuth.AuthStateListener() {
+            @Override
+            public void onAuthStateChanged(@NonNull FirebaseAuth firebaseAuth) {
+                if (firebaseAuth.getCurrentUser() != null){ //si no es null redirigir
+                    Intent intentDashboard = new Intent(getApplicationContext(), MainActivity.class);
+                    intentDashboard.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                    startActivity(intentDashboard);
+                }
+            }
+        };
+
     }
 
     @Override
@@ -152,14 +172,21 @@ public class loginActivity extends AppCompatActivity implements View.OnClickList
             mProgressBar.setMessage("Iniciando sesión, espere un momento...");
             mProgressBar.setCanceledOnTouchOutside(false);
             mProgressBar.show();
-            //Registrar usuario
-            //Exitoso -> Mostrar toast
-            //redireccionar - intent a login
-            Intent intent = new Intent(loginActivity.this, MainActivity.class);
-            intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
-            startActivity(intent);
-            //ocultar progressBar
-            mProgressBar.dismiss();
+            mAuth.signInWithEmailAndPassword(email, password).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
+                @Override
+                public void onComplete(@NonNull Task<AuthResult> task) {
+                    if (task.isSuccessful()){
+                        //ocultamos progressBar
+                        mProgressBar.dismiss();
+                        //redireccionamos - el intent a login
+                        Intent intent = new Intent(loginActivity.this, MainActivity.class);
+                        intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
+                        startActivity(intent);
+                    } else {
+                        Toast.makeText(getApplicationContext(), "No se pudo Iniciar Sesión Correctamente", Toast.LENGTH_SHORT).show();
+                    }
+                }
+            });
         }
     }
 
@@ -169,15 +196,15 @@ public class loginActivity extends AppCompatActivity implements View.OnClickList
         input.requestFocus();
     }
 
-
-    //Metodo que nos servira para hacer validacion y almacenar dentro de la variable user los usuarios
+    //Metodo que nos servira para hacer la validacion y almacenar dentro de la variable user los usuarios
     @Override
     protected void onStart() {
-        FirebaseUser user = mAuth.getCurrentUser(); //obtenemos el usuario actual si esta logeado
-        if(user!=null){ //si no es null el usuario ya esta logueado
-            //mover al usuario al activityMain
-            Intent dashboardActivity = new Intent(loginActivity.this, MainActivity.class);
-            startActivity(dashboardActivity);
+        mAuth.addAuthStateListener(mAuthStateListener);
+        FirebaseUser user = mAuth.getCurrentUser();
+        if (user!=null){//si user es distinto de null
+            Intent intent = new Intent(loginActivity.this, MainActivity.class);
+            intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
+            startActivity(intent);
         }
         super.onStart();
     }
