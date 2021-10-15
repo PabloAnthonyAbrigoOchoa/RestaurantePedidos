@@ -16,7 +16,7 @@ import ec.tecnologicoloja.proyecto.restaurant_pedidos.R;
 public class Pedidos extends AppCompatActivity implements View.OnClickListener {
 
     private Button regresarMenuP, calcular, cancelar;
-    private RadioButton rdParaLlevar, rbEntregaDomicilio;
+    private RadioButton rdParaServirse, rbEntregaDomicilio;
     private CheckBox checkBoxDN, checkBoxDF, checkBoxDC, checkBoxDA, checkBoxAN, checkBoxAB, checkBoxAC, checkBoxAdeC;
     private TextView ttotal;
 
@@ -34,7 +34,7 @@ public class Pedidos extends AppCompatActivity implements View.OnClickListener {
         checkBoxAC = (CheckBox) findViewById(R.id.checkBoxAC);
         checkBoxAdeC = (CheckBox) findViewById(R.id.checkBoxAdeC);
 
-        rdParaLlevar = (RadioButton) findViewById(R.id.rbParaLlevar);
+        rdParaServirse = (RadioButton) findViewById(R.id.rbParaServirse);
         rbEntregaDomicilio = (RadioButton) findViewById(R.id.rbEntregaDomicilio);
 
         ttotal = (TextView) findViewById(R.id.textViewTotalPagar);
@@ -82,7 +82,7 @@ public class Pedidos extends AppCompatActivity implements View.OnClickListener {
         checkBoxAC.setChecked(false);
         checkBoxAdeC.setChecked(false);
 
-        ttotal.setText("Total=0");
+        ttotal.setText("Total = 0");
     }
 
 

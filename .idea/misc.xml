@@ -3,11 +3,21 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/Usuario/RestaurantePedidos/app/src/main/res/drawable/btn_bg.xml" value="0.2203125" />
+        <entry key="..\:/Users/Usuario/RestaurantePedidos/app/src/main/res/drawable/btn_eliminarcta.xml" value="0.2203125" />
+        <entry key="..\:/Users/Usuario/RestaurantePedidos/app/src/main/res/drawable/btn_logout.xml" value="0.2203125" />
+        <entry key="..\:/Users/Usuario/RestaurantePedidos/app/src/main/res/drawable/gradiente_background.xml" value="0.2203125" />
+        <entry key="..\:/Users/Usuario/RestaurantePedidos/app/src/main/res/drawable/ic_eliminar.xml" value="0.2203125" />
+        <entry key="..\:/Users/Usuario/RestaurantePedidos/app/src/main/res/drawable/ic_facebook.xml" value="0.2203125" />
+        <entry key="..\:/Users/Usuario/RestaurantePedidos/app/src/main/res/drawable/ic_google.xml" value="0.2203125" />
+        <entry key="..\:/Users/Usuario/RestaurantePedidos/app/src/main/res/drawable/ic_security.xml" value="0.2203125" />
+        <entry key="..\:/Users/Usuario/RestaurantePedidos/app/src/main/res/drawable/input_bg.xml" value="0.2203125" />
         <entry key="..\:/Users/Usuario/RestaurantePedidos/app/src/main/res/drawable/splashscreen.xml" value="0.2203125" />
-        <entry key="..\:/Users/Usuario/RestaurantePedidos/app/src/main/res/layout/activity_login.xml" value="0.22" />
+        <entry key="..\:/Users/Usuario/RestaurantePedidos/app/src/main/res/layout/activity_login.xml" value="0.25" />
         <entry key="..\:/Users/Usuario/RestaurantePedidos/app/src/main/res/layout/activity_main.xml" value="0.25" />
         <entry key="..\:/Users/Usuario/RestaurantePedidos/app/src/main/res/layout/activity_pedidos.xml" value="0.25" />
         <entry key="..\:/Users/Usuario/RestaurantePedidos/app/src/main/res/layout/activity_quienes_somos.xml" value="0.25" />
+        <entry key="..\:/Users/Usuario/RestaurantePedidos/app/src/main/res/layout/activity_register.xml" value="0.25" />
         <entry key="..\:/Users/Usuario/RestaurantePedidos/app/src/main/res/layout/list_item_num_table.xml" value="0.25" />
         <entry key="..\:/Users/Usuario/RestaurantePedidos/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.2203125" />
         <entry key="..\:/Users/Usuario/RestaurantePedidos/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.2203125" />

@@ -13,20 +13,24 @@
             android:name=".MainActivity"
             android:exported="true"
             android:theme="@style/SplashTime">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
-        <activity
-            android:name="Models.Pedidos"
-            android:exported="true"/>
         <activity
             android:name="Models.QuienesSomos"
             android:exported="true"/>
         <activity
-            android:name="Models.Login"
+            android:name="Models.Pedidos"
+            android:exported="true"/>
+        <activity
+            android:name="Registration.loginActivity"
+            android:exported="true">
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+        </activity>
+        <activity
+            android:name="Registration.registerActivity"
             android:exported="true"/>
     </application>
 

@@ -3,7 +3,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@drawable/gradiente_background">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -21,17 +22,18 @@
             android:id="@+id/textView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="¿Quienes Somos?" />
+            android:text="¿Quienes Somos?"
+            android:textColor="@color/white"/>
 
         <TextView
             android:id="@+id/textView2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Somos un par de desarrolladores y diseñadores, aficionados por lo que hacemos, en este caso traemos un Sistema para la reservación de un pédido ya sea para llevar o a su vez una entrega a domicilio, somos principiantes pero estamos en la plena seguridad de que les va a gustar nuestro proyecto que tenemos en mente. #PB-RESTAURANT"
+            android:text="Somos un par de desarrolladores y diseñadores, aficionados por lo que hacemos, en este caso traemos un Sistema para la reservación de pédidos, ya sea para servirse o a su vez entrega a domicilio. Somos principiantes pero estamos en la plena seguridad de que les va a gustar nuestro proyecto que ofrecemos. #PB-RESTAURANT"
             android:textSize="18dp"
             android:textAlignment="center"
             android:textStyle="italic"
-            android:textColor="#917522"/>
+            android:textColor="#CD9E10"/>
 
         <Button
             android:id="@+id/btnRegresarMenuP"
